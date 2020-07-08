@@ -39,7 +39,7 @@ class BeatDetector:
     def __init__(self, window) -> None:
         self.ui = ui.UserInterface(self.on_auto_prog_button_clicked)
         self.ui.setup_ui(window)
-        self.osc_client = osc.OscClient("localhost", 7701)
+        self.osc_client = osc.OscClient("localhost", 5005)
         self.auto_prog = False
 
         # Wire up beat detector and signal generation
